@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1702368981 source:/home/eby/Desktop/C++/Header_guard_6/main.cpp
+	"square.h"
+	<iostream>
+
+1702368981 /home/eby/Desktop/C++/Header_guard_6/square.h
+

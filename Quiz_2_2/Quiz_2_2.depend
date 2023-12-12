@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1702375776 source:/home/eby/Desktop/C++/Quiz_2_2/main.cpp
+	<iostream>
+
+1702375776 source:/home/eby/Desktop/C++/Quiz_2_2/readNumber.cpp
+	<iostream>
+
