@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1702416385 source:/home/yck/Desktop/GITHUB/Cpp_Key_Topics/Debugging_3_5/main.cpp
+	<plog/Log.h>
+	<plog/Initializers/RollingFileInitializer.h>
+	<iostream>
+
