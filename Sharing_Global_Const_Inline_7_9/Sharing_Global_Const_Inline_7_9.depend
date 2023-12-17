@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1702842196 source:/home/yck/Desktop/GITHUB/Cpp_Key_Topics/Sharing_Global_Const_Inline_7_9/main.cpp
+	"constant.h"
+	<iostream>
+
+1702842294 /home/yck/Desktop/GITHUB/Cpp_Key_Topics/Sharing_Global_Const_Inline_7_9/constant.h
+

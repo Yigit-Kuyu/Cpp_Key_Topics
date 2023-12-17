@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1702668937 source:/home/yck/Desktop/GITHUB/Cpp_Key_Topics/Inline_5_7/main.cpp
+	<iostream>
+	"pi.h"
+
+1702668955 /home/yck/Desktop/GITHUB/Cpp_Key_Topics/Inline_5_7/pi.h
+
+1702668937 source:/home/yck/Desktop/GITHUB/Cpp_Key_Topics/Inline_5_7/math.cpp
+	"pi.h"
+
