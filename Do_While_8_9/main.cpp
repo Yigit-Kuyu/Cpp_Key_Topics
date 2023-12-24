@@ -16,8 +16,7 @@ int main()
         std::cout << "4) Division\n";
         std::cin >> selection;
     }
-    while (selection != 1 && selection != 2 &&
-        selection != 3 && selection != 4);
+    while (selection != 1 && selection != 2 && selection != 3 && selection != 4);
         {
                    // do something with selection here
                    // such as a switch statement

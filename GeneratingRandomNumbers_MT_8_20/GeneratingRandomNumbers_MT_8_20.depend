@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1703134497 source:/home/yck/Desktop/GITHUB/Cpp_Key_Topics/GeneratingRandomNumbers_MT_8_20/main.cpp
+	<iostream>
+	<random>
+
