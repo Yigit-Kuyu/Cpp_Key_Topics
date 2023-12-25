@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1703493180 source:/home/yck/Desktop/GITHUB/Cpp_Key_Topics/Function_Templates_10_16/main.cpp
+	"add.h"
+	<iostream>
+
+1703493180 /home/yck/Desktop/GITHUB/Cpp_Key_Topics/Function_Templates_10_16/add.h
+
+1703493338 source:/home/yck/Desktop/GITHUB/Cpp_Key_Topics/Function_Templates_10_16/foo.cpp
+	"add.h"
+	<iostream>
+
