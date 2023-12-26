@@ -16,6 +16,7 @@ int add(int x, int y, int z) // unction overloading can be performed via number 
 
 
 // Function overloading is not performed via return parameter.
+// (The return type of a function is not considered for differentiation)
 /*
 int getRandomValue() {}; // Error
 double getRandomValue() {}; // Error

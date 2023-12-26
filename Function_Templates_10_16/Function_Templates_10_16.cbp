@@ -32,6 +32,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="add.h" />
+		<Unit filename="foo.cpp" />
 		<Unit filename="main.cpp" />
 		<Extensions />
 	</Project>
