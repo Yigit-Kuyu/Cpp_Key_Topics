@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1703700301 source:/home/yck/Desktop/GITHUB/Cpp_Key_Topics/Pointers_Assignment_12_7/main.cpp
+	<iostream>
+	<typeinfo>
+

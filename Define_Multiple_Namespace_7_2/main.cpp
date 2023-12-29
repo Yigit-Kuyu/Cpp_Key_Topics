@@ -11,7 +11,7 @@
 
 
 // When you should use namespaces:
-// n applications, namespaces can be used to separate application-specific code
+// In applications, namespaces can be used to separate application-specific code
 // from code that might be reusable later (e.g. math functions). For example, physical and math functions
 // could go into one namespace (e.g. Math::). Language and localization functions in another (e.g. Lang::).
 
@@ -27,3 +27,5 @@ int main()
 
     return 0;
 }
+
+// Related page: https://www.learncpp.com/cpp-tutorial/user-defined-namespaces-and-the-scope-resolution-operator/

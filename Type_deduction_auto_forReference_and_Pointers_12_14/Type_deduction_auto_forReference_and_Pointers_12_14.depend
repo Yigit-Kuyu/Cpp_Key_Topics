@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1703792261 source:/home/yck/Desktop/Path Tracking Algorithms/Type_deduction_auto_forReference_and_Pointers_12_14/main.cpp
+	<string>
+	<iostream>
+	<typeinfo>
+

@@ -10,3 +10,7 @@
 
 1702831523 /home/yck/Desktop/GITHUB/Cpp_Key_Topics/Header_guard_6/square.h
 
+1702922132 source:/home/yck/Desktop/GITHUB/Cpp_Key_Topics/Header_guard_6/main.cpp
+	"square.h"
+	<iostream>
+
