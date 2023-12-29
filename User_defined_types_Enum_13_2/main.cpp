@@ -3,12 +3,12 @@
 
 // C++ supports two kinds of enumerations: unscoped enumerations (which we’ll cover now) and
 // scoped enumerations (which we’ll cover later in this chapter).
-// Unscoped enumerations are defined via the enum keyword.
+// Unscoped enumerations are defined via the "enum" keyword.
 
 
 // Each enumeration needs to be fully defined before we can use it (a forward declaration is not sufficient).
 
-//  Enumerators are descriptive, they are useful for enhancing code documentation and readability.
+//  Enumerators are descriptive and symbolic constants, they are useful for enhancing code documentation and readability.
 //  Enumerated types are best used when you have a smallish set of related constants,
 //  and objects only need to hold one of those values at a time.
 
