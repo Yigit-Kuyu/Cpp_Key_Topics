@@ -3,6 +3,12 @@
 // With normal variables or references, we can access objects directly.
 // However, because pointers hold addresses, we first need to dereference the pointer to get the object before we can do anything with it.
 
+/*
+To access a specific member variable, we use the member selection operator (operator.)
+in between the struct variable name and the member name (for normal structs and references to structs),
+or the member selection from pointer operator (operator->) (for pointers to structs)
+*/
+
 
 struct Employee
 {

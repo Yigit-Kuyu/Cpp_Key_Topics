@@ -5,6 +5,13 @@
 // Structs are generally passed by (const) reference to avoid making copies.
 
 
+/*
+To access a specific member variable, we use the member selection operator (operator.)
+in between the struct variable name and the member name (for normal structs and references to structs),
+or the member selection from pointer operator (operator->) (for pointers to structs)
+*/
+
+
 struct Employee
 {
     int id {}; // zero initalizer
@@ -29,7 +36,7 @@ int main()
     // Print Joe's information
     printEmployee(joe);
 
-    std::cout << '\n';
+    std::cout << "joe id: " << joe.id << '\n'; // accessing struct member
 
     // Print Frank's information
     printEmployee(frank);

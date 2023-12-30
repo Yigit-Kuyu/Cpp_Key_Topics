@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1703882823 source:/home/yck/Desktop/GITHUB/Cpp_Key_Topics/Struct_Class_MultipeTemplates_13_11/foo.cpp
+	"pair.h"
+	<iostream>
+
+1703883495 /home/yck/Desktop/GITHUB/Cpp_Key_Topics/Struct_Class_MultipeTemplates_13_11/pair.h
+
+1703882999 source:/home/yck/Desktop/GITHUB/Cpp_Key_Topics/Struct_Class_MultipeTemplates_13_11/main.cpp
+	<iostream>
+	"pair.h"
+
