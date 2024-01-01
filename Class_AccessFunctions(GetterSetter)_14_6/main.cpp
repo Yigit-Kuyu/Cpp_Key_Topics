@@ -1,6 +1,9 @@
 #include <iostream>
 
 
+// The codes work, since I changed the name of the main folder, that will give an error.
+// To use this code, copy and paste it into clean C++ page.
+
 // An access function is a trivial public member function whose job is to retrieve or change the value of a private member variable.
 // Access functions come in two flavors: getters and setters. Getters (also sometimes called accessors) are public member functions
 // that return the value of a private member variable. Setters (also sometimes called mutators) are public member functions
