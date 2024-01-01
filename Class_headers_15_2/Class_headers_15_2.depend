@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1703971147 source:/home/yck/Desktop/GITHUB/Cpp_Key_Topics/Class_headers_15_2/main.cpp
+	<iostream>
+	"class_yck.h"
+
+1703970614 /home/yck/Desktop/GITHUB/Cpp_Key_Topics/Class_headers_15_2/class_yck.h
+
