@@ -8,6 +8,12 @@
 // There is no element with index N!
 
 
+struct Foo
+{
+    //std::vector<int> v1(8); // compile error: direct initialization not allowed for member default initializers
+    std::vector<int> v{ std::vector<int>(8) }; // ok
+};
+
 int main()
 {
 	// Value initialization (uses default constructor)
@@ -37,16 +43,30 @@ int main()
 
 	// Copy init
     //std::vector<int> v1 = 10;     // 10 not an initializer list, copy init won't match explicit constructor: compilation error
-	// List init
-    std::vector<int> v2{ 0};    // { 10 } interpreted as initializer list, matches list constructor
-    // Copy list init
-    std::vector<int> v3 = { 10 }; // { 10 } interpreted as initializer list, matches list constructor
+
+
+    // the 10 is not treated as an element value; instead, it represents the size of the vector.
+    std::vector<int> v2(10); // 10 not an initializer list, matches explicit single-argument constructor
+
+
+
+    //  v2 has only one element at index 0, and its value is 0.
+     std::vector<int> v3{ 0};   // List init,  { 10 } interpreted as initializer list, matches list constructor
+
+    // v3 has only one element at index 0, and its value is 10.
+    std::vector<int> v4 = { 10 }; // Copy list init, { 10 } interpreted as initializer list, matches list constructor
 
     std::cout << "The size of data is " << sizeof(data) << " bytes\n";
-    std::cout << "The size of data is " << sizeof(v2) << " bytes\n";
     std::cout << "The size of data is " << sizeof(v3) << " bytes\n";
-    std::cout << v3[5] << '\n';  /// Garip kaldım, ayrıca Array_Introduction_16_1'i doldurmayı unutma
+    std::cout << "The size of data is " << sizeof(v4) << " bytes\n";
 
+    // The behavior of accessing elements beyond the vector's size is undefined. It may lead to unexpected results,
+    // and the compiler is not required to detect or warn about such situations.
+    // In my case, the compiler is providing a default-initialized value (zero) for the out-of-bounds access:
+    std::cout << v4[5] << '\n';  // output: 0 (no error)
+
+    //  const std::vector must be initialized, and then cannot be modified:
+    const std::vector<int> prime { 2, 3, 5, 7, 11 };
 
 	return 0;
 }
