@@ -68,6 +68,9 @@ int main()
     //  const std::vector must be initialized, and then cannot be modified:
     const std::vector<int> prime { 2, 3, 5, 7, 11 };
 
+    // One of the biggest downsides of std::vector is that it cannot be made constexpr.
+    // If you need a constexpr array, use std::array.
+
 	return 0;
 }
 
