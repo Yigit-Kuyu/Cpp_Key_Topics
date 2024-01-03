@@ -36,14 +36,17 @@ int main()
     std::cout << "Accessing element with [] operator: " << prime1[10]<< '\n';; // invalid index (undefined behavior, output: 1041)
 
     // Accessing array elements using the at() member function does runtime bounds checking:
-    std::cout << "Accessing element with at operator: " << prime1.at(3)<< '\n';; // print the value of element with index 3
+     std::cout << "Accessing element with at operator: " << prime1.at(3)<< '\n';; // print the value of element with index 3
      std::cout << "Accessing element with at operator: " << prime1.at(10)<< '\n';; // invalid index (throws exception)
 
 
      // Note: at() is slower (but safer) than operator[]. Despite being less safe, operator[] is typically used over at().
 
 
+
     return 0;
 }
 
+
+// Related page: https://www.learncpp.com/cpp-tutorial/stdvector-and-the-unsigned-length-and-subscript-problem/
 
