@@ -32,7 +32,7 @@ int main()
 
     std::cout << " ##### Vectors are contiguous in memory ###### " << '\n';
     std::cout << "An int is " << sizeof(int) << " bytes\n";
-    std::cout << &(primes[0]) << '\n';
+    std::cout << &(primes[0]) << '\n';// primes[]: access element in vector
     std::cout << &(primes[1]) << '\n';
     std::cout << &(primes[2]) << '\n';
 
