@@ -26,3 +26,6 @@
 2023-12-13 00:56:54.475 DEBUG [9662] [main@27] main() called
 2023-12-13 00:56:54.475 DEBUG [9662] [getUserInput@7] getUserInput() called
 2023-12-13 00:57:08.194 DEBUG [9662] [getNumberInput@16] getNumberInput() called
+2024-01-03 17:41:04.552 DEBUG [64437] [main@27] main() called
+2024-01-03 17:41:04.552 DEBUG [64437] [getUserInput@7] getUserInput() called
+2024-01-03 17:41:04.552 DEBUG [64437] [getNumberInput@16] getNumberInput() called
