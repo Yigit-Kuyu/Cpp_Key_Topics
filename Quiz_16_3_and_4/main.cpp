@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include "Random.h"
 
 
 std::vector<size_t> func(std::vector<int>& yck)
@@ -22,24 +23,103 @@ std::vector<size_t> func(std::vector<int>& yck)
 
       return {min_index, max_index};
 
+};
+
+
+
+std::vector<int> GetInput()
+{
+   std::vector<int> in{};
+   int input;
+
+   do
+   {
+   std::cout<< "get input: (-1 for exit): ";
+   std::cin >> input;
+   in.push_back(input);
+    }
+   while(input!=-1);
+
+   return in;
+
+};
+
+
+
+namespace Wordlist
+{
+
+const std::vector<std::string> list_namee{"mystery", "broccoli" , "account"};
+std::string chosen_word=list_namee[Random::get<std::size_t>(0, list_namee.size()-1)];
+
 }
+
+class Session
+{
+private:
+
+    std::string chosen_word{};
+    int input{};
+    size_t num_trial{};
+    char ch{};
+
+public:
+    Session(): chosen_word{Wordlist::chosen_word}
+    {
+    std::cout<< "chosen word in class: " << chosen_word << '\n';
+    }
+
+    void GetInput()
+    {
+    std::cout << "how many inputs: ";
+    std::cin >> num_trial;
+
+    for(size_t i=0; i<num_trial; ++i)
+    {
+    std::cout << "input (char): ";
+    std::cin  >> ch ;
+    if(std::isalpha(ch))
+    {
+    size_t found = chosen_word.find(ch);
+    while (found != std::string::npos) {
+        chosen_word.erase(found, 1);  // Erase 1 character at the found position
+        found = chosen_word.find(ch);
+    }
+    }
+    if(chosen_word.length()==0)
+    {
+        std::cout << "You win";
+        return;
+    }
+
+    }
+    std::cout << "You lose" << 'n';
+    std::cout<< "chosen word in class: " << chosen_word << '\n';
+    return;
+
+    }
+
+
+};
 
 
 int main()
 {
-    std::vector evens { 2, 4, 6, 8, 10, 12 }; // int vector
-    const std::vector<double> evens_const { 1.2, 3.4, 5.6 }; // reminder: std::vector can't be constexpr
-    std::vector <std::string_view> str {"Alex", "Brad", "Charles","Dave"};
-    std::vector<int> single {12};
-    std::vector<int> single_size(12);
-
+    std::vector<int> evens{};
+    evens=GetInput();
     const std::vector <size_t> indexes=func(evens);
 
     for(auto i: indexes)
         std::cout << " Found indexes " << i << '\n';
 
+    //############### Hangman Game #########################
+    const std::string random_word{Wordlist::chosen_word};
+    std::cout << "chose value in namespace: " << random_word<< '\n';
 
-    std::cout << "Hello world!" << std::endl;
+    Session S1;
+    S1.GetInput();
+
+
     return 0;
 }
 

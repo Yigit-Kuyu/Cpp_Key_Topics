@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1704396448 source:/home/yck/Desktop/GITHUB/Cpp_Key_Topics/Quiz_16_3_and_4/main.cpp
+	<iostream>
+	<vector>
+	"Random.h"
+
+1703142648 /home/yck/Desktop/GITHUB/Cpp_Key_Topics/Quiz_16_3_and_4/Random.h
+	<chrono>
+	<random>
+
