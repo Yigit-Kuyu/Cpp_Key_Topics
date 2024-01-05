@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1704464331 source:/home/yck/Desktop/GITHUB/Cpp_Key_Topics/Array_Returning_17_3/main.cpp
+	<array>
+	<iostream>
+
