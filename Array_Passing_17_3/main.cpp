@@ -40,7 +40,6 @@ void passByRef_withLenTemplate(const std::array<int, N>& arr) // we've defined t
 
 
 
-
 void passByRef(const std::array<int, 5>& arr) // we must explicitly specify <int, 5> here
 {
     std::cout << arr[0] << '\n';
