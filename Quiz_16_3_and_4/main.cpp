@@ -23,7 +23,7 @@ std::vector<size_t> func(std::vector<int>& yck)
 
       return {min_index, max_index};
 
-};
+}
 
 
 

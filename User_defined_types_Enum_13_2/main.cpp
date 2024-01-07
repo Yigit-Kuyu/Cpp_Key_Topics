@@ -46,7 +46,7 @@ int main()
     Color raspberry { Color::red }; // also okay, accessing enumerator from scope of Color
     Feeling me { happy };
 
-    Feeling_1::Feeling my{ Feeling_1::Feeling::blue };
+    Feeling_1::Feeling my{ Feeling_1::Feeling::blue }; // my=blue
 
      if (apple == red) // if the shirt is blue
         std::cout << "apple is red!"<< '\n';
