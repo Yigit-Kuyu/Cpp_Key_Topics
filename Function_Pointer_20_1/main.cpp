@@ -10,9 +10,12 @@
 // int (*const fcnPtr)(); // The syntax for creating a const function pointer
 
 
-int foo()
+// One of the most useful things to do with function pointers is pass a function as an argument to another function.
+// Functions used as arguments to another function are sometimes called "callback functions".
+
+int foo(int x)
 {
-    return 5;
+    return x;
 }
 
 double goo()
@@ -30,17 +33,28 @@ int hoo(int x)
 
 int main()
 {
-    int (*fcnPtr)(){ &foo };    // OK: fcnPtr points to function foo
-    //int (*fcnPtr2)(){ &goo };  // Error: wrong -- return types don't match!
-    double (*fcnPtr4)(){ &goo }; // OK
+    int (*fcnPtr)(int){ &foo };    // OK: fcnPtr points to function foo
+    //int (*fcnPtr2)(){ &goo };  // Error: wrong -- return types don't match (int!=double)
+    double (*fcnPtr3)(){ &goo }; // OK
     //fcnPtr = &goo; // Error:  wrong -- return types don't match!
-    fcnPtr4 = &goo; // OK
-    //fcnPtr=&hoo; // Error: wrong -- fcnPtr1 has no parameters, but hoo() does
+    //fcnPtr3=&hoo; // Error: wrong -- fcnPtr3has no parameters, but hoo() does
+
+    int x{};
+    if (fcnPtr) // make sure fcnPtr isn't a null pointer
+       x =fcnPtr(5); // otherwise this will lead to undefined behavior
+
+    std::cout<< "x is " << x << std::endl;
+
+    auto fcnPtr7{ &foo }; //  the auto keyword can infer the type of a function pointer.
+	std::cout << fcnPtr7(7) << '\n';
+
+    // Note: We recommend using std::function rather than function pointers.
 
     return 0;
+
+
+
 }
-
-
 
 
 // Related page: https://www.learncpp.com/cpp-tutorial/function-pointers/
