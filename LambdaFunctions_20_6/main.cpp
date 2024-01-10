@@ -81,4 +81,4 @@ int main()
 
 
 
-// Related page: https://www.learncpp.com/cpp-tutorial/introduction-to-lambdas-anonymous-functions/#google_vignette
+// Related page: https://www.learncpp.com/cpp-tutorial/introduction-to-lambdas-anonymous-functions/
