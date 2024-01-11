@@ -32,7 +32,7 @@ public:
 	int getCents() const { return m_cents; } // getter
 };
 
-// note: this function is not a member function!
+// note: this function is not a member function! (friend function)
 Cents operator+(const Cents& c1, const Cents& c2)
 {
 	// use the Cents constructor and operator+(int, int)
@@ -41,7 +41,7 @@ Cents operator+(const Cents& c1, const Cents& c2)
 }
 
 
-// note: this function is not a member function!
+// note: this function is not a member function! (friend function)
 Cents operator+(const Cents& c1, int value)
 {
 	// use the Cents constructor and operator+(int, int)
@@ -49,7 +49,7 @@ Cents operator+(const Cents& c1, int value)
 	return c1.m_cents + value;
 }
 
-// note: this function is not a member function!
+// note: this function is not a member function! (friend function)
 Cents operator+(int value, const Cents& c1)
 {
 	// use the Cents constructor and operator+(int, int)
