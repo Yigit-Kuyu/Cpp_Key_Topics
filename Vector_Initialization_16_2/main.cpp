@@ -71,6 +71,15 @@ int main()
     // One of the biggest downsides of std::vector is that it cannot be made constexpr.
     // If you need a constexpr array, use std::array.
 
+
+    // Initialalizing array both size and initial value:
+	const int size_vector=3;
+	int initial_val=8;
+	//std::vector<int> primm(3){8}; // Error
+	std::vector<int> primm(size_vector,initial_val);
+	for(auto& el: primm)
+	     std::cout << " eleement: " << el << std::endl;
+
 	return 0;
 }
 
