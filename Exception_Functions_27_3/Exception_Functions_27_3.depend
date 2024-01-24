@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1706078852 source:/home/yck/Desktop/GITHUB/Cpp_Key_Topics/Exception_Functions_27_3/main.cpp
+	<cmath>
+	<iostream>
+
