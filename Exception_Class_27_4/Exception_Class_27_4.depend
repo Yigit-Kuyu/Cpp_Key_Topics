@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1706159523 source:/home/yck/Desktop/GITHUB/Cpp_Key_Topics/Exception_Class_27_4/main.cpp
+	<iostream>
+	<string>
+	<string_view>
+

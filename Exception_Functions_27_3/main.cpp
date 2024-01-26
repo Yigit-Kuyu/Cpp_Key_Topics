@@ -55,4 +55,5 @@ int main()
 
 /*
 Related page: https://www.learncpp.com/cpp-tutorial/exceptions-functions-and-stack-unwinding/
+              https://www.learncpp.com/cpp-tutorial/uncaught-exceptions-catch-all-handlers/
 */

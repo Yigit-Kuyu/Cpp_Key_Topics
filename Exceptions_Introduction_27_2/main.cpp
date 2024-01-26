@@ -45,7 +45,8 @@ try // Look for exceptions that occur within try block and route to attached cat
 
 int main()
 {
-    try
+    try // Try block looks for exceptions thrown by the code
+        // If no catch blocks matches, the program will terminate with an unhandled exception error.
     {
         // Statements that may throw exceptions you want to handle go here
         throw -1; // an exception is raised
