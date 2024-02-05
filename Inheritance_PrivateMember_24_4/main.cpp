@@ -73,6 +73,11 @@ public:
 
 int main()
 {
+    // When derived.getID() is called, the compiler looks to see if function getID() has been defined in the Derived class. It hasn’t.
+    // Then it starts looking in the inherited classes (which in this case is Base). Base has defined an getID() function,
+    // so it uses that one. In other words, Base::getID() was used because Derived::getID() doesn’t exist.
+    //However, if we had defined Derived::getID() in the Derived class, it would have been used instead.
+
     Derived derived{ 1.3, 5 }; // use Derived(double, int) constructor
     std::cout << "Id: " << derived.getId() << '\n';
     std::cout << "Cost: " << derived.getCost() << '\n';
