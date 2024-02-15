@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1707376394 source:/home/yck/Desktop/GITHUB/Cpp_Key_Topics/VirtualFunctions_Polymorphism_25_2/main.cpp
+	<iostream>
+	<string_view>
+

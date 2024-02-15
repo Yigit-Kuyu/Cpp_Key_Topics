@@ -12,6 +12,7 @@ class Employee
 {
 public:
     using IDType = int;
+    double f{10};
 
 private:
     std::string m_name{};
@@ -33,9 +34,10 @@ public:
 int main()
 {
     Employee john { "John", 1, 45000 };
-    Employee::IDType id { john.getId() }; // must use fully qualified name outside class
+    Employee::IDType id { john.getId() }; // must use fully qualified name outside class (Employee::IDType->int)
 
     std::cout << john.getName() << " has id: " << id << '\n';
+    std::cout<< john.f << std::endl; // access public member of the class outside
 
     return 0;
 }
