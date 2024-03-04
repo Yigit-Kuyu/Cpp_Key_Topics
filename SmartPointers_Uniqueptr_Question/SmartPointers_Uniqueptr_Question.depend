@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1709412406 source:/home/yck/Desktop/GITHUB/Cpp_Key_Topics/SmartPointers_Uniqueptr_Question/main.cpp
+	<iostream>
+	<memory>
+

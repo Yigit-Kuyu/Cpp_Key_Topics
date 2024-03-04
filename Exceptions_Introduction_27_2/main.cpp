@@ -19,7 +19,7 @@ throw MyException("Fatal Error"); // Throw an object of class MyException
 
 // Try blocks and catch blocks work together -- a try block detects any exceptions
 // that are thrown by statements within the try block,
-//  and routes them to a catch block with a matching type for handling.
+// and routes them to a catch block with a matching type for handling.
 
 
 void ExceptionFunc(int x)

@@ -8,6 +8,8 @@
 // then the returned value can be moved instead of copied into the destination object!
 // This makes return by value extremely inexpensive for these types!
 
+// Move semantics means the class will transfer ownership of the object rather than making a copy.
+
 
 /*
 Move semantics will be used instead of copy semantics when all of the following are true:

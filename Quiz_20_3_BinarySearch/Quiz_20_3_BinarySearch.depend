@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1704864325 source:/home/yck/Desktop/GITHUB/Cpp_Key_Topics/Quiz_20_3_BinarySearch/main.cpp
-	<iostream>
-	<iterator>
-	<numeric>
-	<cassert>
-

@@ -26,7 +26,7 @@ public:
 
 // note: this function is a member function!
 // the cents parameter in the friend version is now the implicit *this parameter
-Cents Cents::operator+ (int value) const
+Cents Cents::operator+ (int value) const // This is automatically called when '+' is used with between Cents and integer
 {
     return Cents { m_cents + value };
 }
